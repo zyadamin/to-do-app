@@ -25,6 +25,7 @@ class ScheduleItem extends StatelessWidget {
             Container(
               child: Column(
                 mainAxisAlignment: MainAxisAlignment.center,
+                crossAxisAlignment: CrossAxisAlignment.start,
                 children: [
                   Text(this.item['starttime'],
                   style: TextStyle(fontSize: 20,color: Colors.white,

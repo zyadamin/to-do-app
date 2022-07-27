@@ -1,5 +1,6 @@
 
 import 'package:flutter/material.dart';
+import 'package:flutter/services.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:path/path.dart';
 import 'package:to_do_app/core/util/blocks/app/cubit.dart';
@@ -35,6 +36,14 @@ class tabBar extends StatelessWidget {
            elevation: 0,
            foregroundColor: Colors.black,
            backgroundColor: Colors.white,
+           systemOverlayStyle: SystemUiOverlayStyle(
+             // Status bar color
+             statusBarColor: Colors.white,
+
+             // Status bar brightness (optional)
+             statusBarIconBrightness: Brightness.dark, // For Android (dark icons)
+             statusBarBrightness: Brightness.light, // For iOS (dark icons)
+           ),
            bottom: const TabBar(
              labelColor: Colors.black,
              unselectedLabelColor: Colors.grey,
